@@ -71,7 +71,7 @@ def predict(request: PredictRequest):
     }
     3. Construct an instance of `PredictResponse` and return
     """
-        requestDateTime = datetime.datetime.now()
+    requestDateTime = datetime.datetime.now()
     startTs = time.time()
 
     predict_proba = classifier.predict_proba(request)
